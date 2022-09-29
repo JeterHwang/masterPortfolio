@@ -1,4 +1,7 @@
 import React, { Component } from "react";
+import { AiOutlineDownload } from "react-icons/ai";
+import { Document, Page, pdfjs } from "react-pdf/dist/esm/entry.webpack";
+import { Container, Row } from "react-bootstrap";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import TopButton from "../../components/topButton/TopButton";
@@ -9,6 +12,7 @@ import AddressImg from "./AddressImg";
 import { Fade } from "react-reveal";
 import "./ContactComponent.css";
 import { greeting, contactPageData } from "../../portfolio.js";
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 const ContactData = contactPageData.contactSection;
 const blogSection = contactPageData.blogSection;
@@ -25,10 +29,7 @@ class Contact extends Component {
           <Fade bottom duration={1000} distance="40px">
             <div className="contact-heading-div">
               <div className="contact-heading-img-div">
-                <img
-                  src={require(`../../assests/images/${ContactData["profile_image_path"]}`)}
-                  alt=""
-                />
+                <AddressImg theme={theme} />
               </div>
               <div className="contact-heading-text-div">
                 <h1
@@ -43,58 +44,6 @@ class Contact extends Component {
                 >
                   {ContactData["description"]}
                 </p>
-                <SocialMedia theme={theme} />
-                <div className="resume-btn-div">
-                  <Button
-                    text="See My Resume"
-                    newTab={true}
-                    href={greeting.resumeLink}
-                    theme={theme}
-                  />
-                </div>
-              </div>
-            </div>
-          </Fade>
-          <Fade bottom duration={1000} distance="40px">
-            <div className="blog-heading-div">
-              <div className="blog-heading-text-div">
-                <h1 className="blog-heading-text" style={{ color: theme.text }}>
-                  {blogSection["title"]}
-                </h1>
-                <p
-                  className="blog-header-detail-text subTitle"
-                  style={{ color: theme.secondaryText }}
-                >
-                  {blogSection["subtitle"]}
-                </p>
-                <div className="blogsite-btn-div">
-                  <Button
-                    text="Visit My Blogsite"
-                    newTab={true}
-                    href={blogSection.link}
-                    theme={theme}
-                  />
-                </div>
-              </div>
-              <div className="blog-heading-img-div">
-                {/* <img
-											src={require(`../../assests/images/${blogSection["avatar_image_path"]}`)}
-											alt=""
-										/> */}
-                <BlogsImg theme={theme} />
-              </div>
-            </div>
-          </Fade>
-          <Fade bottom duration={1000} distance="40px">
-            <div className="address-heading-div">
-              <div className="contact-heading-img-div">
-                {/* <img
-											src={require(`../../assests/images/${addressSection["avatar_image_path"]}`)}
-											alt=""
-										/> */}
-                <AddressImg theme={theme} />
-              </div>
-              <div className="address-heading-text-div">
                 <h1
                   className="address-heading-text"
                   style={{ color: theme.text }}
@@ -119,13 +68,50 @@ class Contact extends Component {
                 >
                   {phoneSection["subtitle"]}
                 </p>
-                <div className="address-btn-div">
+                <SocialMedia theme={theme} />
+                {/* <div className="resume-btn-div">
                   <Button
-                    text="Visit on Google Maps"
+                    text="See My Resume"
                     newTab={true}
-                    href={addressSection.location_map_link}
+                    href={greeting.resumeLink}
                     theme={theme}
                   />
+                </div> */}
+              </div>
+            </div>
+          </Fade>
+          <Fade bottom duration={1000} distance="40px">
+            <div className="resume-heading-div">
+              <div className="resume-section">
+                <div className="resume-btn-div">
+                  <Button
+                    text="Download CV"
+                    newTab={true}
+                    href={require(`../../assests/pdf/${ContactData["resume_name"]}`)}
+                    theme={theme}
+                  >
+                    <AiOutlineDownload />
+                    &nbsp;Download CV
+                  </Button>
+                </div>
+                <div className="resume">
+                  <Document
+                    file={require(`../../assests/pdf/${ContactData["resume_name"]}`)}
+                    className="d-flex justify-content-center"
+                  >
+                    <Page pageNumber={1} scale={1.7} />
+                  </Document>
+                </div>
+                <div className="resume-btn-div">
+                  <Button
+                    text="Download CV"
+                    newTab={true}
+                    href={require(`../../assests/pdf/${ContactData["resume_name"]}`)}
+                    theme={theme}
+                  >
+                    <AiOutlineDownload />
+                    &nbsp;Download CV
+                  </Button>
                 </div>
               </div>
             </div>

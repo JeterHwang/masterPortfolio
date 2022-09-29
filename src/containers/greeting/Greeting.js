@@ -5,6 +5,7 @@ import Button from "../../components/button/Button";
 import { greeting } from "../../portfolio";
 import { Fade } from "react-reveal";
 import FeelingProud from "./FeelingProud";
+import Tilt from "react-parallax-tilt";
 
 export default function Greeting(props) {
   const theme = props.theme;
@@ -17,17 +18,23 @@ export default function Greeting(props) {
               <h1 className="greeting-text" style={{ color: theme.text }}>
                 {greeting.title}
               </h1>
-              <h2 className="greeting-nickname" style={{ color: theme.text }}>
+              {/* <h2 className="greeting-nickname" style={{ color: theme.text }}>
                 ( {greeting.nickname} )
-              </h2>
+              </h2> */}
               <p
                 className="greeting-text-p subTitle"
                 style={{ color: theme.secondaryText }}
               >
-                {greeting.subTitle}
+                Welcome!<br></br>
+                My name is Jing-Teng(Jeter) Hwang, a graduate student from
+                Electrical Engineering and Computer Science Department of
+                National Taiwan University.
+                <br></br>
+                Now I'm applying for PhD program in the areas including digital
+                circuit design and computer architecture.
               </p>
               <SocialMedia theme={theme} />
-              <div className="portfolio-repo-btn-div">
+              {/* <div className="portfolio-repo-btn-div">
                 <Button
                   text="⭐ Star Me On Github"
                   newTab={true}
@@ -35,7 +42,7 @@ export default function Greeting(props) {
                   theme={theme}
                   className="portfolio-repo-btn"
                 />
-              </div>
+              </div> */}
               {/* <div className="button-greeting-div">
               <Button text="Contact me" href="#contact" />
               <Button text="See my resume" newTab={true} href={greeting.resumeLink} />
@@ -43,11 +50,18 @@ export default function Greeting(props) {
             </div>
           </div>
           <div className="greeting-image-div">
+            <Tilt>
+              <img
+                src={require("../../assests/images/portrait.png")}
+                className="img-fluid"
+                alt="avatar"
+              ></img>
+            </Tilt>
             {/* <img
 							alt="saad sitting on table"
 							src={require("../../assests/images/feelingProud.svg")}
 						></img> */}
-            <FeelingProud theme={theme} />
+            {/* <FeelingProud theme={theme} /> */}
           </div>
         </div>
       </div>

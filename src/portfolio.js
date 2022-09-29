@@ -2,7 +2,7 @@
 
 // Website related settings
 const settings = {
-  isSplash: true, // Change this to false if you don't want Splash screen.
+  isSplash: false, // Change this to false if you don't want Splash screen.
 };
 
 //SEO Related settings
@@ -19,15 +19,15 @@ const seo = {
 
 //Home Page
 const greeting = {
-  title: "Ashutosh Hathidara",
-  logo_name: "AshutoshHathidara",
+  title: "About Me",
+  logo_name: "JeterHwang",
   nickname: "layman_brother",
   subTitle:
     "A passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
   resumeLink:
     "https://drive.google.com/open?id=1XYpYhLeqCdyx_q6l0bQoC7RgwQjAjXPf",
   portfolio_repository: "https://github.com/ashutosh1919/masterPortfolio",
-  githubProfile: "https://github.com/ashutosh1919",
+  githubProfile: "https://github.com/JeterHwang",
 };
 
 const socialMediaLinks = [
@@ -42,43 +42,43 @@ const socialMediaLinks = [
 
   {
     name: "Github",
-    link: "https://github.com/ashutosh1919",
+    link: "https://github.com/JeterHwang",
     fontAwesomeIcon: "fa-github", // Reference https://fontawesome.com/icons/github?style=brands
     backgroundColor: "#181717", // Reference https://simpleicons.org/?q=github
   },
   {
     name: "LinkedIn",
-    link: "https://www.linkedin.com/in/ashutosh-hathidara-88710b138/",
+    link: "https://www.linkedin.com/in/hwang-jeter-527335220",
     fontAwesomeIcon: "fa-linkedin-in", // Reference https://fontawesome.com/icons/linkedin-in?style=brands
     backgroundColor: "#0077B5", // Reference https://simpleicons.org/?q=linkedin
   },
   {
     name: "YouTube",
-    link: "https://www.youtube.com/channel/UC_amoXmmxSY9KusoDczDTXQ",
+    link: "https://www.youtube.com/channel/UCjulMuZgDt7wLve2_p1GzCQ",
     fontAwesomeIcon: "fa-youtube", // Reference https://fontawesome.com/icons/youtube?style=brands
     backgroundColor: "#FF0000", // Reference https://simpleicons.org/?q=youtube
   },
   {
     name: "Gmail",
-    link: "mailto:ashutoshhathidara98@gmail.com",
+    link: "mailto:b07901068@ntu.edu.tw",
     fontAwesomeIcon: "fa-google", // Reference https://fontawesome.com/icons/google?style=brands
     backgroundColor: "#D14836", // Reference https://simpleicons.org/?q=gmail
   },
   {
     name: "Twitter",
-    link: "https://twitter.com/ashutosh_1919",
+    link: "https://www.facebook.com/jeter0309",
     fontAwesomeIcon: "fa-twitter", // Reference https://fontawesome.com/icons/twitter?style=brands
     backgroundColor: "#1DA1F2", // Reference https://simpleicons.org/?q=twitter
   },
   {
     name: "Facebook",
-    link: "https://www.facebook.com/laymanbrother.19/",
+    link: "https://www.facebook.com/jeter0309",
     fontAwesomeIcon: "fa-facebook-f", // Reference https://fontawesome.com/icons/facebook-f?style=brands
     backgroundColor: "#1877F2", // Reference https://simpleicons.org/?q=facebook
   },
   {
     name: "Instagram",
-    link: "https://www.instagram.com/layman_brother/",
+    link: "https://www.instagram.com/jeterhwang/",
     fontAwesomeIcon: "fa-instagram", // Reference https://fontawesome.com/icons/instagram?style=brands
     backgroundColor: "#E4405F", // Reference https://simpleicons.org/?q=instagram
   },
@@ -87,12 +87,12 @@ const socialMediaLinks = [
 const skills = {
   data: [
     {
-      title: "Data Science & AI",
+      title: "Neural Architecture Search",
       fileName: "DataScienceImg",
       skills: [
-        "⚡ Developing highly scalable production ready models for various deeplearning and statistical use cases",
-        "⚡ Experience of working with Computer Vision and NLP projects",
-        "⚡ Complex quantitative modelling for dynamic forecasting and time series analysis",
+        "⚡ Search for neural architecture which is compact and power-efficient while maintains high accuracy",
+        "⚡ One year research experience in Microsystem Research Laboratory (MSRL), advised by Prof. Tzi-Dar Chiueh",
+        "⚡ Extend MIT Once-for-All(OFA) Network to enable quantization scheme search",
       ],
       softwareSkills: [
         {
@@ -128,12 +128,13 @@ const skills = {
       ],
     },
     {
-      title: "Full Stack Development",
+      title: "Protein Multiple Sequence Alignment",
       fileName: "FullStackImg",
       skills: [
-        "⚡ Building responsive website front end using React-Redux",
-        "⚡ Developing mobile applications using Flutter, React Native and solo android apps using Kotlin",
-        "⚡ Creating application backend in Node, Express & Flask",
+        "⚡ Search for faster workflow in Multiple Sequence Alignment (MSA)",
+        "⚡ One and a half years research experience advised by Prof. Yi-Chang Lu",
+        "⚡ Incorporate bio-medical information extracted from large protein database into MSA workflow",
+        "⚡ Use pretrained neural networks in predicting protein similarity",
       ],
       softwareSkills: [
         {
@@ -210,13 +211,13 @@ const skills = {
       ],
     },
     {
-      title: "Cloud Infra-Architecture",
+      title: "FPGA/ASIC Design",
       fileName: "CloudInfraImg",
       skills: [
-        "⚡ Experience working on multiple cloud platforms",
-        "⚡ Hosting and maintaining websites on virtual machine instances along with integration of databases",
-        "⚡ Deploying deep learning models on cloud to use on mobile devices",
-        "⚡ Setting up streaming jobs from DB to Server or vice-versa on GCP and AWS",
+        "⚡ Familiar with whole ASIC design flow, from verilog programming to real tape-out",
+        "⚡ Design a chess player AI with Altera DE2-115 FPGA",
+        "⚡ Design hardware accelerator for Smith-Waterman alignment algorithm (layout completed)",
+        "⚡ Hardware accelerator for Convolutional Neural Network",
       ],
       softwareSkills: [
         {
@@ -277,45 +278,6 @@ const skills = {
         },
       ],
     },
-    {
-      title: "UI/UX Design",
-      fileName: "DesignImg",
-      skills: [
-        "⚡ Designing highly attractive user interface for mobile and web applications",
-        "⚡ Customizing logo designs and building logos from scratch",
-        "⚡ Creating the flow of application functionalities to optimize user experience",
-      ],
-      softwareSkills: [
-        {
-          skillName: "Adobe XD",
-          fontAwesomeClassname: "simple-icons:adobexd",
-          style: {
-            color: "#FF2BC2",
-          },
-        },
-        {
-          skillName: "Figma",
-          fontAwesomeClassname: "simple-icons:figma",
-          style: {
-            color: "#F24E1E",
-          },
-        },
-        {
-          skillName: "Adobe Illustrator",
-          fontAwesomeClassname: "simple-icons:adobeillustrator",
-          style: {
-            color: "#FF7C00",
-          },
-        },
-        {
-          skillName: "Inkscape",
-          fontAwesomeClassname: "simple-icons:inkscape",
-          style: {
-            color: "#000000",
-          },
-        },
-      ],
-    },
   ],
 };
 
@@ -368,17 +330,19 @@ const competitiveSites = {
 const degrees = {
   degrees: [
     {
-      title: "Indian Institute of Information Technology Kurnool",
-      subtitle: "B.Tech. in Computer Engineering",
-      logo_path: "iiitk_logo.png",
-      alt_name: "IIITDM Kurnool",
-      duration: "2016 - Present",
+      title: "National Taiwan University",
+      subtitle:
+        "Bachelor Degree in Electrical Engineering and Computer Science",
+      logo_path: "NTU.png",
+      alt_name: "NTUEE",
+      duration: "2018 - 2022",
       descriptions: [
-        "⚡ I have studied basic software engineering subjects like DS, Algorithms, DBMS, OS, CA, AI etc.",
-        "⚡ Apart from this, I have done courses on Deep Learning, Data Science, Cloud Computing and Full Stack Development.",
-        "⚡ I was selected for Merit cum Means Scholarship which is given to top 10% of students in college. I have received award from respected director for consistently best performance in academics.",
+        "⚡ Specialize in Digital Circuit Design, Computer Vision, and Protein Sequencing",
+        "⚡ Advisor: Tzi-Dar Chiueh and Yi-Chang Lu",
+        "⚡ GPA: 3.97/4.30",
+        "⚡ Last60: 4.13/4.30",
       ],
-      website_link: "http://iiitk.ac.in",
+      website_link: "https://web.ee.ntu.edu.tw/eng/index.php",
     },
   ],
 };
@@ -386,8 +350,8 @@ const degrees = {
 const certifications = {
   certifications: [
     {
-      title: "Machine Learning",
-      subtitle: "- Andrew Ng",
+      title: "Electronics (Ⅰ)",
+      subtitle: "A",
       logo_path: "stanford_logo.png",
       certificate_link:
         "https://www.coursera.org/account/accomplishments/verify/22MTSSC5WDTM",
@@ -395,8 +359,8 @@ const certifications = {
       color_code: "#8C151599",
     },
     {
-      title: "Deep Learning",
-      subtitle: "- Andrew Ng",
+      title: "Electronics (Ⅱ)",
+      subtitle: "A+",
       logo_path: "deeplearning_ai_logo.png",
       certificate_link:
         "https://www.coursera.org/account/accomplishments/specialization/H8CPSFXAJD2G",
@@ -404,8 +368,8 @@ const certifications = {
       color_code: "#00000099",
     },
     {
-      title: "ML on GCP",
-      subtitle: "- GCP Training",
+      title: "Electromagnetics (Ⅰ)",
+      subtitle: "A+",
       logo_path: "google_logo.png",
       certificate_link:
         "https://www.coursera.org/account/accomplishments/specialization/EB4VJARK8647",
@@ -413,8 +377,8 @@ const certifications = {
       color_code: "#0C9D5899",
     },
     {
-      title: "Data Science",
-      subtitle: "- Alex Aklson",
+      title: "Electromagnetics (Ⅱ)",
+      subtitle: "A+",
       logo_path: "ibm_logo.png",
       certificate_link:
         "https://www.coursera.org/account/accomplishments/specialization/PLEAPCSJBZT5",
@@ -422,8 +386,8 @@ const certifications = {
       color_code: "#1F70C199",
     },
     {
-      title: "Big Data",
-      subtitle: "- Kim Akers",
+      title: "Electrical Engineering Lab (digital Circuit)",
+      subtitle: "A-",
       logo_path: "microsoft_logo.png",
       certificate_link:
         "https://drive.google.com/file/d/164zKCFOsI4vGqokc-Qj-e_D00kLDHIrG/view",
@@ -431,8 +395,8 @@ const certifications = {
       color_code: "#D83B0199",
     },
     {
-      title: "Advanced Data Science",
-      subtitle: "- Romeo Kienzler",
+      title: "Integrated Circuit Design",
+      subtitle: "A",
       logo_path: "ibm_logo.png",
       certificate_link:
         "https://www.coursera.org/account/accomplishments/verify/BH2T9BRU87BH",
@@ -440,8 +404,8 @@ const certifications = {
       color_code: "#1F70C199",
     },
     {
-      title: "Advanced ML on GCP",
-      subtitle: "- GCP Training",
+      title: "Computer Architecture",
+      subtitle: "A-",
       logo_path: "google_logo.png",
       certificate_link:
         "https://www.coursera.org/account/accomplishments/verify/5JZZM7TNQ2AV",
@@ -449,8 +413,8 @@ const certifications = {
       color_code: "#0C9D5899",
     },
     {
-      title: "DL on Tensorflow",
-      subtitle: "- Laurence Moroney",
+      title: "Integrated Circuits Design Laboratory",
+      subtitle: "A-",
       logo_path: "deeplearning_ai_logo.png",
       certificate_link:
         "https://www.coursera.org/account/accomplishments/verify/6T4DCUGNK8J8",
@@ -458,8 +422,8 @@ const certifications = {
       color_code: "#00000099",
     },
     {
-      title: "Fullstack Development",
-      subtitle: "- Jogesh Muppala",
+      title: "Algorithms",
+      subtitle: "A",
       logo_path: "coursera_logo.png",
       certificate_link:
         "https://www.coursera.org/account/accomplishments/certificate/NRANJA66Y2YA",
@@ -467,8 +431,8 @@ const certifications = {
       color_code: "#2A73CC",
     },
     {
-      title: "Kuberenetes on GCP",
-      subtitle: "- Qwiklabs",
+      title: "Digital System Design",
+      subtitle: "A+",
       logo_path: "gcp_logo.png",
       certificate_link:
         "https://google.qwiklabs.com/public_profiles/e4d5a92b-faf6-4679-a70b-a9047c0cd750",
@@ -476,8 +440,8 @@ const certifications = {
       color_code: "#4285F499",
     },
     {
-      title: "Cryptography",
-      subtitle: "- Saurabh Mukhopadhyay",
+      title: "Data Structure",
+      subtitle: "A+",
       logo_path: "nptel_logo.png",
       certificate_link:
         "https://drive.google.com/open?id=1z5ExD_QJVdU0slLkp8CBqSF3-C3g-ro_",
@@ -485,8 +449,8 @@ const certifications = {
       color_code: "#FFBB0099",
     },
     {
-      title: "Cloud Architecture",
-      subtitle: "- Qwiklabs",
+      title: "Applied Deep Learning",
+      subtitle: "A+",
       logo_path: "gcp_logo.png",
       certificate_link:
         "https://google.qwiklabs.com/public_profiles/5fab4b2d-be6f-408c-8dcb-6d3b58ecb4a2",
@@ -499,46 +463,35 @@ const certifications = {
 // Experience Page
 const experience = {
   title: "Experience",
-  subtitle: "Work, Internship and Volunteership",
+  subtitle: "Research, Internship and Volunteership",
   description:
-    "I have worked with many evolving startups as ML and DL Developer, Designer and Software Architect. I have also worked with some well established companies mostly as AI Developer. I love organising events and that is why I am also involved with many opensource communities as a representative.",
+    "As a EECS student, I engrossed myself in multiple research fields during my third and fourth year in college. To better explore pertinent industries, I earned a part-time position in a big company when I was a fourth-grader. Besides, I dedicated myself to international voluntary service in my school, in the hope of fitting in the global community.",
   header_image_path: "experience.svg",
   sections: [
     {
-      title: "Work",
+      title: "Research",
       experiences: [
         {
-          title: "Associate AI Engineer",
-          company: "Legato Health Technology",
-          company_url: "https://legatohealthtech.com/",
-          logo_path: "legato_logo.png",
-          duration: "June 2020 - PRESENT",
-          location: "Hyderabad, Telangana",
+          title: "Undergraduate Research Project",
+          company: "NTU MicroSystem Research Lab",
+          company_url: "http://dodger.ee.ntu.edu.tw/",
+          logo_path: "NTU.png",
+          duration: "Feb 2021 - Aug 2022",
+          location: "Taipei",
           description:
-            "I am working on automating healthcare products. The projects involve automation for process improvements and for significantly enhancing the profits. I am currently working on Cancer Survival and Reoccurence Prediction. Our goal is to make AI system which scales and removes doctor dependency as much as possible.",
+            "Advised by Prof. Tzi-Dar Chiueh, I do research on AutoML, which aims to design power-efficient and compact neural networks. Our ultimate goal is integrating the quantization scheme 'FloatSD' developed by our lab into AutoML algorithm. My research mainly focuses on adapting Once-For-All NAS algorithm, with the hope of enabling NSA algorithm to search different quantization bit-width and quantization scheme.",
           color: "#0879bf",
         },
         {
-          title: "Android and ML Developer",
-          company: "Muffito Incorporation",
-          company_url: "https://www.linkedin.com/company/muffito-inc/about/",
-          logo_path: "muffito_logo.png",
-          duration: "May 2018 - Oct 2018",
-          location: "Pune, Maharashtra",
+          title: "Undergraduate Research Project",
+          company: "Lab for Data Processing Systems",
+          company_url: "https://sites.google.com/view/ldps-giee-ntu/home",
+          logo_path: "NTU.png",
+          duration: "Sep 2020 - Present",
+          location: "Taipei",
           description:
-            "I have created complete Android Application for locating Pub, Bar and beverage shops around you. I have also worked on implementation of algorithms for Face Detection, Text extraction from Image. I was involved in a team for creating complete software architecure of mobile and web application as well as admin panel for company.",
+            "Advised by Prof. Yi-Chnag Lu, I do research on Mutiple Sequence Alignment(MSA), which aims to find a faster workflow that beats existing MSA programs both in quality and in execution time. My research mainly focuses on distinguishing protein similarity with bio-medical information from large protein database, which can be achieved by using neural network pretrained on UniRef90 protein database.",
           color: "#9b1578",
-        },
-        {
-          title: "Android Developer",
-          company: "FreeCopy Pvt. Ltd.",
-          company_url: "https://www.linkedin.com/company/freecopy/about/",
-          logo_path: "freecopy_logo.png",
-          duration: "Nov 2017 - Dec 2017",
-          location: "Ahmedabad, Gujarat",
-          description:
-            "FreeCopy is the Start up from Indian Institute of Management, Ahmedabad. I have changed the integration of the whole app from Google to Firebase. I learnt the efﬁcient ways of Data communications like Retroﬁt, Eventbus etc. I experienced the real time start up. I learnt the Design thinking of UI on perspective of People.",
-          color: "#fc1f20",
         },
       ],
     },
@@ -546,26 +499,15 @@ const experience = {
       title: "Internships",
       experiences: [
         {
-          title: "Data Science Research Intern",
-          company: "Delhivery Pvt. Ltd.",
-          company_url: "https://www.delhivery.com/",
-          logo_path: "delhivery_logo.png",
-          duration: "May 2019 - Sept 2019",
-          location: "Gurgaon, Haryana",
-          description:
-            "I have worked on project of predicting freight rates based on previous data. There were two objectives: (1) To build a forecasting engine to predict daily freight rates. (2) To embed feature in the model which can explain the seasonal major changes in freight rate based on regions and locations. I have closely worked with deep learning models in combination with statistical methods to create solution for this. At the end of internship, I had created model deployed on AWS EC2 with the use of Kafka stream jobs, ElasticSearch and PostgreSQL.",
-          color: "#ee3c26",
-        },
-        {
-          title: "Data Science Intern",
-          company: "Intel Indexer LLC",
+          title: "Validation Engineer",
+          company: "Intel Microelectronics Asia LLC., Taiwan Branch",
           company_url:
-            "https://opencorporates.com/companies/us_dc/EXTUID_4170286",
-          logo_path: "intel_logo.jpg",
-          duration: "Nov 2018 - Dec 2018",
-          location: "Work From Home",
+            "https://member.amcham.com.tw/intel-microelectronics-asia-llc-taiwan-branch",
+          logo_path: "intel.png",
+          duration: "Aug 2021 - Jul 2022",
+          location: "Taipei Nangang Site",
           description:
-            "This is financial Solution Company. I have made Supervised Learning model for the company which can perform time series analysis on Stock price data for 32 companies. I have built LSTM Neural Networks Model and trained the data of 32 companies for last 2 years. This model is also used for forecasting.",
+            "Intel Taiwan branch mainly deals with platform(server) validation and issue debugging. I works as part of High Speed IO(HSIO) team, which tests the stability and signal integraty of PCIE. I co-work with Paul A Sunderland, maintaining an internal project that tests PCIE LTSSM state machine. Furthermore, I lead a side project whose goal is to graphicalize server test result with PowerBI and PostgreSQL",
           color: "#0071C5",
         },
       ],
@@ -574,60 +516,15 @@ const experience = {
       title: "Volunteerships",
       experiences: [
         {
-          title: "Google Explore ML Facilitator",
-          company: "Google",
-          company_url: "https://about.google/",
-          logo_path: "google_logo.png",
-          duration: "June 2019 - April 2020",
-          location: "Hyderabad, Telangana",
+          title: "Local Partner for International Students",
+          company: "International Companions for Learning",
+          company_url: "https://icl.tw/",
+          logo_path: "ICL.png",
+          duration: "Sep 2020 - May 2022",
+          location: "Taiwan",
           description:
-            "Explore Machine Learning (ML) is a Google-sponsored program for university students to get started with Machine Learning. The curriculum offers 3 tracks of ML Content (Beginner, Intermediate, Advanced) and relies on university student facilitators to train other students on campus and to build opensource projects under this program.",
+            "ICL is a program that aims to help international students get familiar with Taiwanese culture. A local student will pair with a international student and they will serve one elementary or junior high school in Taiwan. The international students share their culture in English and the local students translate the content into Chinese so that children can fully understand. In this program, not only do I learn how to cooperate with people speaking a different language or holding a completely different point of view, but also make a lot of friends during service period",
           color: "#4285F4",
-        },
-        {
-          title: "Microsoft Student Partner",
-          company: "Microsoft",
-          company_url: "https://www.microsoft.com/",
-          logo_path: "microsoft_logo.png",
-          duration: "Aug 2019 - May 2020",
-          location: "Hyderabad, Telangana",
-          description:
-            "Microsoft Student Partner is a program for university students to lead the awareness and use of Cloud especially Azure tools in the development of their projects and startups. Under this program, I have organised hands on workshops and seminars to teach Cloud Computing concepts to students.",
-          color: "#D83B01",
-        },
-        {
-          title: "Mozilla Campus Captain",
-          company: "Mozilla",
-          company_url: "https://www.mozilla.org/",
-          logo_path: "mozilla_logo.png",
-          duration: "Oct 2019 - May 2020",
-          location: "Kurnool, Andhra Pradesh",
-          description:
-            "My responsibility for this program was to create opensource environment in college and in the city. We have organised multiple hackathons on the problems collected by ordinary people from Kurnool city. We have build opensource community of our own college. The community is available at dsc_iiitdmk on github.",
-          color: "#000000",
-        },
-        {
-          title: "Developer Students Club Member",
-          company: "DSC IIITDM Kurnool",
-          company_url:
-            "https://www.linkedin.com/company/developer-students-club-iiitdm-kurnool",
-          logo_path: "dsc_logo.png",
-          duration: "Jan 2018 - May 2020",
-          location: "Kurnool, Andhra Pradesh",
-          description:
-            "We have well established developer club in college which is directly associated with Google Developers. We have developed many interdisciplinary projects under the membership of this club. We have organised workshops and activities on Android Application Development, Flutter and React JS.",
-          color: "#0C9D58",
-        },
-        {
-          title: "Developer Program Member",
-          company: "Github",
-          company_url: "https://github.com/",
-          logo_path: "github_logo.png",
-          duration: "July 2019 - PRESENT",
-          location: "Work From Home",
-          description:
-            "I am actively contributing to many opensource projects. I have contributed to projects of organisations like Tensorflow, Uber, Facebook, Google, Scikit-learn, Kiwix, Sympy, Python, NVLabs, Fossasia, Netrack, Keras etc. These contributions include bug fixes, feature requests and formulating proper documentation for project.",
-          color: "#181717",
         },
       ],
     },
@@ -638,7 +535,7 @@ const experience = {
 const projectsHeader = {
   title: "Projects",
   description:
-    "My projects makes use of vast variety of latest technology tools. My best experience is to create Data Science projects and deploy them to web applications using cloud infrastructure.",
+    "These github repositories are either final porojects of some courses or the code implementation of my research. Feel free to click on whichever intrigues you and take a closer look of my work!!",
   avatar_image_path: "projects_image.svg",
 };
 
@@ -651,46 +548,46 @@ const publicationsHeader = {
 
 const publications = {
   data: [
-    {
-      id: "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzQ=",
-      name: "Artificial Intelligence Paper",
-      createdAt: "2020-03-06T16:26:54Z",
-      description: "Paper Written on Artificial Intelligence published in xyz ",
-      url:
-        "https://www.andrewng.org/publications/building-high-level-features-using-large-scale-unsupervised-learning/",
-    },
-    {
-      id: "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzi=",
-      name: "Artificial Intelligence Paper",
-      createdAt: "2020-03-06T16:26:54Z",
-      description: "Paper Written on Artificial Intelligence published in xyz ",
-      url:
-        "https://www.andrewng.org/publications/building-high-level-features-using-large-scale-unsupervised-learning/",
-    },
-    {
-      id: "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNze=",
-      name: "Artificial Intelligence Paper",
-      createdAt: "2020-03-06T16:26:54Z",
-      description: "Paper Written on Artificial Intelligence published in xyz ",
-      url:
-        "https://www.andrewng.org/publications/building-high-level-features-using-large-scale-unsupervised-learning/",
-    },
-    {
-      id: "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzt=",
-      name: "Artificial Intelligence Paper",
-      createdAt: "2020-03-06T16:26:54Z",
-      description: "Paper Written on Artificial Intelligence published in xyz ",
-      url:
-        "https://www.andrewng.org/publications/building-high-level-features-using-large-scale-unsupervised-learning/",
-    },
-    {
-      id: "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzb=",
-      name: "Artificial Intelligence Paper",
-      createdAt: "2020-03-06T16:26:54Z",
-      description: "Paper Written on Artificial Intelligence published in xyz ",
-      url:
-        "https://www.andrewng.org/publications/building-high-level-features-using-large-scale-unsupervised-learning/",
-    },
+    // {
+    //   id: "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzQ=",
+    //   name: "Artificial Intelligence Paper",
+    //   createdAt: "2020-03-06T16:26:54Z",
+    //   description: "Paper Written on Artificial Intelligence published in xyz ",
+    //   url:
+    //     "https://www.andrewng.org/publications/building-high-level-features-using-large-scale-unsupervised-learning/",
+    // },
+    // {
+    //   id: "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzi=",
+    //   name: "Artificial Intelligence Paper",
+    //   createdAt: "2020-03-06T16:26:54Z",
+    //   description: "Paper Written on Artificial Intelligence published in xyz ",
+    //   url:
+    //     "https://www.andrewng.org/publications/building-high-level-features-using-large-scale-unsupervised-learning/",
+    // },
+    // {
+    //   id: "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNze=",
+    //   name: "Artificial Intelligence Paper",
+    //   createdAt: "2020-03-06T16:26:54Z",
+    //   description: "Paper Written on Artificial Intelligence published in xyz ",
+    //   url:
+    //     "https://www.andrewng.org/publications/building-high-level-features-using-large-scale-unsupervised-learning/",
+    // },
+    // {
+    //   id: "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzt=",
+    //   name: "Artificial Intelligence Paper",
+    //   createdAt: "2020-03-06T16:26:54Z",
+    //   description: "Paper Written on Artificial Intelligence published in xyz ",
+    //   url:
+    //     "https://www.andrewng.org/publications/building-high-level-features-using-large-scale-unsupervised-learning/",
+    // },
+    // {
+    //   id: "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzb=",
+    //   name: "Artificial Intelligence Paper",
+    //   createdAt: "2020-03-06T16:26:54Z",
+    //   description: "Paper Written on Artificial Intelligence published in xyz ",
+    //   url:
+    //     "https://www.andrewng.org/publications/building-high-level-features-using-large-scale-unsupervised-learning/",
+    // },
   ],
 };
 
@@ -699,8 +596,9 @@ const contactPageData = {
   contactSection: {
     title: "Contact Me",
     profile_image_path: "animated_ashutosh.png",
+    resume_name: "CV.pdf",
     description:
-      "I am available on almost every social media. You can message me, I will reply within 24 hours. I can help you with ML, AI, React, Android, Cloud and Opensource Development.",
+      "Feel free to contact me on every social media. You can message me, I will reply within 24 hours. If you are instered in my research, maybe we can exchange ideas on those topics!!",
   },
   blogSection: {
     title: "Blogs",
@@ -712,13 +610,13 @@ const contactPageData = {
   addressSection: {
     title: "Address",
     subtitle:
-      "Ambavadi vas, Kanodar, T.A.-Palanpur, Dist.-Banaskantha, Gujarat - 385520",
+      "No. 69, Ren'ai 1st St., West Dist., Chiayi City 600030 , Taiwan (R.O.C.)",
     avatar_image_path: "address_image.svg",
     location_map_link: "https://goo.gl/maps/MpMqtRZytFchMkZ76",
   },
   phoneSection: {
     title: "Phone Number",
-    subtitle: "+91 8320758513",
+    subtitle: "(+886) 908596152",
   },
 };
 
