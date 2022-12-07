@@ -26,12 +26,12 @@ export default function Greeting(props) {
                 style={{ color: theme.secondaryText }}
               >
                 Welcome!<br></br>
-                My name is Jing-Teng(Jeter) Hwang, a graduate student from
-                Electrical Engineering and Computer Science Department of
-                National Taiwan University.
-                <br></br>
-                Now I'm applying for PhD program in the areas including digital
-                circuit design and computer architecture.
+                My name is Jing-Teng (Jeter) Hwang, a graduate student from the
+                EE department at National Taiwan University, Taipei, Taiwan. Now
+                I'm applying for PhD programs in the areas including digital
+                circuit design and hardware accelerators. I list my research
+                interests in the rest of this page, hope we have something in
+                common !!
               </p>
               <SocialMedia theme={theme} />
               {/* <div className="portfolio-repo-btn-div">

@@ -7,6 +7,8 @@ import DataScienceImg from "./DataScienceImg";
 import FullStackImg from "./FullStackImg";
 import CloudInfraImg from "./CloudInfraImg";
 import DesignImg from "./DesignImg";
+import Button from "../../components/button/Button";
+import { link } from "fs";
 
 function GetSkillSvg(props) {
   if (props.fileName === "DataScienceImg")
@@ -55,6 +57,25 @@ class SkillSection extends Component {
                         >
                           {skillSentence}
                         </p>
+                      );
+                    })}
+                  </div>
+                  <div className="skills-button-div">
+                    {skill.links.map((links) => {
+                      let linkobj = null;
+                      if (links["path"].includes("http"))
+                        linkobj = links["path"];
+                      else
+                        linkobj = require(`../../assests/pdf/${links["path"]}`);
+                      return (
+                        <Button
+                          text={`${links["name"]}`}
+                          href={linkobj}
+                          newTab={true}
+                          theme={theme}
+                        >
+                          [Paper]
+                        </Button>
                       );
                     })}
                   </div>

@@ -7,11 +7,11 @@ const settings = {
 
 //SEO Related settings
 const seo = {
-  title: "Ashutosh's Portfolio",
+  title: "Jeter's Portfolio",
   description:
     "A passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
   og: {
-    title: "Ashutosh Hathidara Portfolio",
+    title: "Jeter Hwang Portfolio",
     type: "website",
     url: "http://ashutoshhathidara.com/",
   },
@@ -21,7 +21,7 @@ const seo = {
 const greeting = {
   title: "About Me",
   logo_name: "JeterHwang",
-  nickname: "layman_brother",
+  nickname: "Jeter",
   subTitle:
     "A passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
   resumeLink:
@@ -90,9 +90,16 @@ const skills = {
       title: "Neural Architecture Search",
       fileName: "DataScienceImg",
       skills: [
-        "⚡ Search for neural architecture which is compact and power-efficient while maintains high accuracy",
-        "⚡ One year research experience in Microsystem Research Laboratory (MSRL), advised by Prof. Tzi-Dar Chiueh",
-        "⚡ Extend MIT Once-for-All(OFA) Network to enable quantization scheme search",
+        "⚡ One and a half year research experience in Microsystem Research Laboratory (MSRL), advised by Prof. Tzi-Dar Chiueh",
+        "⚡ Part of a big program that aims to search for compact and efficient neural architecture",
+        "⚡ Combine the Learned Step Size Quantization (LSQ) scheme with the Once-for-All (OFA) network to search for a mixed-precision model",
+        "⚡ Best searched network achieved 72.31% top-1 accuracy on Imagenet with merely 6.17(G) bit operations (bitOps), which is comparable or even superior compared to SOTA methods",
+      ],
+      links: [
+        {
+          name: "Paper",
+          path: "QNAS.pdf",
+        },
       ],
       softwareSkills: [
         {
@@ -131,10 +138,16 @@ const skills = {
       title: "Protein Multiple Sequence Alignment",
       fileName: "FullStackImg",
       skills: [
-        "⚡ Search for faster workflow in Multiple Sequence Alignment (MSA)",
-        "⚡ One and a half years research experience advised by Prof. Yi-Chang Lu",
-        "⚡ Incorporate bio-medical information extracted from large protein database into MSA workflow",
-        "⚡ Use pretrained neural networks in predicting protein similarity",
+        "⚡ Two-year research experience advised by Prof. Yi-Chang Lu",
+        "⚡ Designed a novel workflow for guide tree construction, being the first MSA method that used a pre-trained LSTM model to predict protein similarity",
+        "⚡ The proposed workflow achieved SOTA accuracy on many large protein MSA benchmarks with little additional overhead",
+        "⚡ The paper has been submitted to Bioinformatics and is currently under review",
+      ],
+      links: [
+        {
+          name: "Paper",
+          path: "MSA.pdf",
+        },
       ],
       softwareSkills: [
         {
@@ -214,10 +227,20 @@ const skills = {
       title: "FPGA/ASIC Design",
       fileName: "CloudInfraImg",
       skills: [
-        "⚡ Familiar with whole ASIC design flow, from verilog programming to real tape-out",
-        "⚡ Design a chess player AI with Altera DE2-115 FPGA",
-        "⚡ Design hardware accelerator for Smith-Waterman alignment algorithm (layout completed)",
-        "⚡ Hardware accelerator for Convolutional Neural Network",
+        "⚡ Built a solid background in FPGA/AISC development experience in coursework, such as Electrical Engineering Lab (Digital Circuit) and Integrated Circuits Design Laboratory",
+        "⚡ Designed a FPGA-based Gobang (五子棋) AI that was able to beat average human players through the min-max search algorithm",
+        "⚡ Designed an application specific integrated circuit (ASIC) for sparse matrix-vector multiplication",
+        "⚡ The ASIC achieved 70x speedup compared to its Python counterpart, and it was taped out by UMC after synthesis and layout",
+      ],
+      links: [
+        {
+          name: "Demo",
+          path: "https://youtube.com/shorts/bzr9uhysR_I",
+        },
+        {
+          name: "Paper",
+          path: "SMVM.pdf",
+        },
       ],
       softwareSkills: [
         {
@@ -414,7 +437,7 @@ const certifications = {
     },
     {
       title: "Integrated Circuits Design Laboratory",
-      subtitle: "A-",
+      subtitle: "A+",
       logo_path: "deeplearning_ai_logo.png",
       certificate_link:
         "https://www.coursera.org/account/accomplishments/verify/6T4DCUGNK8J8",
@@ -463,9 +486,9 @@ const certifications = {
 // Experience Page
 const experience = {
   title: "Experience",
-  subtitle: "Research, Internship and Volunteership",
+  subtitle: "Research, Internships and Volunteerships",
   description:
-    "As a EECS student, I engrossed myself in multiple research fields during my third and fourth year in college. To better explore pertinent industries, I earned a part-time position in a big company when I was a fourth-grader. Besides, I dedicated myself to international voluntary service in my school, in the hope of fitting in the global community.",
+    "As a EECS student, I engrossed myself in multiple research fields during my third and fourth year in college. To better explore engineering, I secured a part-time position in a big company throughout my senior year. Besides, I dedicated myself to voluntary service in my school, helping international students get acquainted with local culture.",
   header_image_path: "experience.svg",
   sections: [
     {
@@ -479,7 +502,7 @@ const experience = {
           duration: "Feb 2021 - Aug 2022",
           location: "Taipei",
           description:
-            "Advised by Prof. Tzi-Dar Chiueh, I do research on AutoML, which aims to design power-efficient and compact neural networks. Our ultimate goal is integrating the quantization scheme 'FloatSD' developed by our lab into AutoML algorithm. My research mainly focuses on adapting Once-For-All NAS algorithm, with the hope of enabling NSA algorithm to search different quantization bit-width and quantization scheme.",
+            "Advised by Prof. Tzi-Dar Chiueh, I conduct research on neural architecture search (NAS), which aims to design power-efficient and compact neural networks. Our ultimate goal is integrating the quantization scheme 'FloatSD' developed by our lab into the NAS algorithm. My research mainly focuses on combining the Once-for-All (OFA) NAS algorithm with Learned Step Size Quantization (LSQ), searching for the best architecture along with the optimal quantization bit-width.",
           color: "#0879bf",
         },
         {
@@ -490,7 +513,7 @@ const experience = {
           duration: "Sep 2020 - Present",
           location: "Taipei",
           description:
-            "Advised by Prof. Yi-Chnag Lu, I do research on Mutiple Sequence Alignment(MSA), which aims to find a faster workflow that beats existing MSA programs both in quality and in execution time. My research mainly focuses on distinguishing protein similarity with bio-medical information from large protein database, which can be achieved by using neural network pretrained on UniRef90 protein database.",
+            "Advised by Prof. Yi-Chnag Lu, I designed a novel algorithm for Multiple Sequence Alignment (MSA), where a pre-trained LSTM model was first used to predict protein similarity in the MSA pipeline. The proposed workflow achieved SOTA alignment accuracy on multiple benchmarks. The publication of this work is currently under review.",
           color: "#9b1578",
         },
       ],
@@ -507,7 +530,7 @@ const experience = {
           duration: "Aug 2021 - Jul 2022",
           location: "Taipei Nangang Site",
           description:
-            "Intel Taiwan branch mainly deals with platform(server) validation and issue debugging. I works as part of High Speed IO(HSIO) team, which tests the stability and signal integraty of PCIE. I co-work with Paul A Sunderland, maintaining an internal project that tests PCIE LTSSM state machine. Furthermore, I lead a side project whose goal is to graphicalize server test result with PowerBI and PostgreSQL",
+            "Being a member of the High Speed IO (HSIO) team, my job was testing PCIe connections on the Eagle Stream platform. I joined a project led by the HSIO team at the Intel Oregon site, maintaining a C-based toll that tested teh LTSSM state machine of PCIe connections. As one of the contributors to the project, I finished three function enhancements and one bug fix during my internship. In the co-working experience with American team, I had a chance to study transistor-level mechanisms behind Intel IPs, which motivated me to become a IC designer.",
           color: "#0071C5",
         },
       ],
@@ -523,7 +546,7 @@ const experience = {
           duration: "Sep 2020 - May 2022",
           location: "Taiwan",
           description:
-            "ICL is a program that aims to help international students get familiar with Taiwanese culture. A local student will pair with a international student and they will serve one elementary or junior high school in Taiwan. The international students share their culture in English and the local students translate the content into Chinese so that children can fully understand. In this program, not only do I learn how to cooperate with people speaking a different language or holding a completely different point of view, but also make a lot of friends during service period",
+            "ICL is a program that aims to help international students get familiar with Taiwanese culture. A local student will pair with an international student and they will serve one elementary or junior high school in Taiwan. The international students share their culture in English and the local students translate the content into Chinese so that children can fully understand. In this program, not only do I learn how to cooperate with people speaking a different language or holding a completely different point of view, but also make a lot of friends during the service period.",
           color: "#4285F4",
         },
       ],
